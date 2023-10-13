@@ -8,27 +8,23 @@
 - 被 Windows 更新搞壞的
 - Windows BCD 開機錯誤 `0xc000000f`
 ## 使用方法
-1. 進入 SteamOS 的桌面模式。
-2. 開啟 Firefox，輸入 `github.com/xTaiwanPingLord/SD_fix` 打開此網頁。
-3. 點左下角開始菜單，System 裡面打開 `Konsole`
-4. 在 Konsole 貼上 `git clone github.com/xTaiwanPingLord/SD_fix` 並按下 Enter 執行。（瀏覽器中用觸控板選取起來，L2可以作為右鍵選擇`copy`複製，Konsole的右上角點擊`Paste`貼上）
+1. 開機之後，按住 `開機鍵` 點擊 `切換至桌面` 以進入 `桌面模式`
+2. 點左下角，System裡面打開 `Konsole`；打開瀏覽器(FireFox)
+![](https://hackmd.io/_uploads/HJTJoZ7u3.png)
+3. 瀏覽器中網址輸入 `github.com/xTaiwanPingLord/SD_fix` 應該會來到這篇文章。
+4. 在 Konsole 貼上 `git clone https://github.com/xTaiwanPingLord/SD_fix` 並按下 Enter 執行。（瀏覽器中用觸控板選取起來，`L2` 可以作為右鍵選擇 `copy` 複製，Konsole的右上角點擊 `Paste` 貼上）
 5. 在 Konsole 貼上以下指令，並按下 Enter 執行。
 **可能會要求輸入密碼: `admin`，輸入時不會顯示字元，需要盲打**
 ```shell
 sudo bash SD_fix/fix.sh
 ```
 6. 出現一堆文字後，重開機就會出現系統切換選單
-## 
+### 其他說明
 - 切換系統用最左邊十字方向鍵選擇（有些人的機器要先按一下「下」才能選左右）
 - 幾秒沒選會自動進steamos
-:::
 
-## 進入 Batocera
-1. 關閉 Steam Deck。
-2. 按住 `音量鍵-`以及`開機鍵`
-3. 選擇 `EFI SD/MMC Card (或你的SD卡名字)`。![](https://hackmd.io/_uploads/Sy4WhYIl6.png)
 
-## 出現密碼錯誤／設定密碼
+# 出現密碼錯誤／設定密碼
 ### 狀況描述
 輸入指令時出現
 - Sorry, try again.
