@@ -2,19 +2,19 @@
 
 steamos-readonly disable
 
-# Define paths
-SCRIPT_PATH="$PWD/dualboot_fix.sh"
-SERVICE_PATH="$PWD/dualboot_fix.service"
+# Set install locations
+SCRIPT_PATH="/usr/local/bin/dualboot_fix.sh"
+SERVICE_PATH="/etc/systemd/system/dualboot_fix.service"
 
-systemctl disable dualboot_fix.service
+# Copy script to system path
+install -m 755 -o root -g root dualboot_fix.sh "$SCRIPT_PATH"
 
-# Set permissions
-chmod +x "$SCRIPT_PATH"
-chown root:root "$SCRIPT_PATH"
+# Copy service file to system path
+install -m 644 -o root -g root dualboot_fix.service "$SERVICE_PATH"
 
 echo "[+] Reloading systemd and enabling service..."
 systemctl daemon-reload
-systemctl enable $SERVICE_PATH
+systemctl enable dualboot_fix.service
 
 echo "[+] Optionally starting service now..."
 systemctl start dualboot_fix.service
