@@ -1,0 +1,11 @@
+[Unit]
+Description=Ensure Game Mount is in fstab and fix dualboot
+After=local-fs.target
+
+[Service]
+Type=oneshot
+ExecStart=/home/deck/SD_fix/dualboot_fix.sh
+RemainAfterExit=true
+
+[Install]
+WantedBy=multi-user.target
