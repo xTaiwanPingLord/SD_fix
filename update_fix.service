@@ -1,0 +1,11 @@
+[Unit]
+Description=Fix for dualboot_fix
+After=home.mount
+
+[Service]
+Type=oneshot
+ExecStart=/home/deck/SD_fix/install.sh
+RemainAfterExit=true
+
+[Install]
+WantedBy=multi-user.target

@@ -4,7 +4,7 @@ After=local-fs.target
 
 [Service]
 Type=oneshot
-ExecStart=/home/deck/SD_fix/dualboot_fix.sh
+ExecStart=/usr/local/bin/dualboot_fix.sh
 RemainAfterExit=true
 
 [Install]
