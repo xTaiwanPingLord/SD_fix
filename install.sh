@@ -11,7 +11,7 @@ UPDATE_SERVICE_PATH="/etc/systemd/system/update_fix.service"
 # Check installation file exist in current working folder
 DUALBOOT_FILE="dualboot_fix.sh"
 DUALBOOT_SERVICE_FILE="dualboot_fix.service"
-UPDATE_SERVICE_FILE="update.service"
+UPDATE_SERVICE_FILE="update_fix.service"
 DEFAULT_FOLDER="/home/deck/SD_fix"
 
 # Check in current working directory
