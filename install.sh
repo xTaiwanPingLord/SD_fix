@@ -17,11 +17,11 @@ DEFAULT_FOLDER="/home/deck/SD_fix"
 if [ -f "$DUALBOOT_FILE" ]; then
     echo "Found $DUALBOOT_FILE in $(pwd)"
     DUALBOOT_FILE_PATH="$(pwd)/$DUALBOOT_FILE"
-    UPDATE_FILE_PATH="$(pwd)/$DEFAULT_FOLDER"
+    UPDATE_FILE_PATH="$(pwd)/$UPDATE_FILE"
 else
     echo "$DUALBOOT_FILE not found in $(pwd), using default folder"
     DUALBOOT_FILE_PATH="$DEFAULT_FOLDER/$DUALBOOT_FILE"
-    UPDATE_FILE_PATH="$DEFAULT_FOLDER/$DEFAULT_FOLDER"
+    UPDATE_FILE_PATH="$DEFAULT_FOLDER/$UPDATE_FILE"
 fi
 
 echo "Using file: $DUALBOOT_FILE_PATH"
